@@ -13,6 +13,7 @@ Include the nginx.conf in your main nginx.conf.
 
 ## Development
 The best way to start the server during development is.
+
     rerun "rackup -s thin -p 5555 config.ru"
 
 ## Test
@@ -20,7 +21,9 @@ The best way to start the server during development is.
 Check server with the following commands.
 
 Static resource:
+
     curl -H 'Host: app.com' localhost/hello.txt
 
 Dynamic resource:
+
     curl -H 'Host: app.com' localhost
