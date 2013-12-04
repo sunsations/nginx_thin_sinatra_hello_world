@@ -1,0 +1,18 @@
+---
+chdir: /d/bb/nginx_thin_sinatra_hello_world
+environment: production
+address: 0.0.0.0
+port: 2200
+servers: 3
+onebyone: true
+timeout: 30
+log: log/thin.log
+pid: tmp/pids/thin.pid
+max_conns: 1024
+max_persistent_conns: 10
+require: []
+wait: 30
+threadpool_size: 20
+daemonize: true
+# tag: shows how the process should be tagged in "ps aux"
+tag: nginx_thin_sinatra_hello_world

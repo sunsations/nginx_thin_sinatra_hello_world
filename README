@@ -1,0 +1,24 @@
+This is a sample sinatra application working
+with thin and nginx.
+
+Setup
+=====
+
+Include the nginx.conf in your main nginx.conf.
+    include /d/bb/nginx_thin_sinatra_hello_world/nginx.conf;
+
+
+Run
+===
+    ./command.sh
+
+Test
+====
+
+Check server with the following commands.
+
+Static resource:
+    curl -H 'Host: app.com' localhost/hello.txt
+
+Dynamic resource:
+    curl -H 'Host: app.com' localhost
