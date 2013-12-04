@@ -2,13 +2,10 @@
 
 require 'sinatra/base'
 
-configure {
-  set :port, 9876
-}
-
+# Sinatra hello world example
 class Thinatra < Sinatra::Base
   get '/' do
-    return 'Hello world'
+    return 'Hello world!'
   end
 
   run! if app_file == $0
