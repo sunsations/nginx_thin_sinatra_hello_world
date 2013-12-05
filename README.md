@@ -13,14 +13,16 @@ with thin and nginx.
 ## Development
 Best way to start the development server:
 
-    rerun "rackup -s thin -p 5555 config.ru"
+    bundle exec rerun "rackup -s thin -p 5555 config.ru"
 
 ## Production
-Use helper scripts in ````scripts```` directory
+Use helper scripts in ````bin```` directory
 * ````start```` to start thin cluster
 * ````stop```` to stop thin cluster
 * ````restart```` to restart thin cluster
 * ````logtail```` to ````tail -f```` all log files
+
+All script must be run from the root directory, e.g: ````./bin/start````
 
 ## Test
 
