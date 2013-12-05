@@ -17,10 +17,10 @@ Best way to start the development server:
 
 ## Production
 Use helper scripts in ````bin```` directory
-* ````start```` to start thin cluster
-* ````stop```` to stop thin cluster
-* ````restart```` to restart thin cluster
-* ````logtail```` to ````tail -f```` all log files
+*  ````start```` to start thin cluster
+*  ````stop```` to stop thin cluster
+*  ````restart```` to restart thin cluster
+*  ````logtail```` to ````tail -f```` all log files
 
 All script must be run from the root directory, e.g: ````./bin/start````
 
