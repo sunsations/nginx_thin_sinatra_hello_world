@@ -10,6 +10,8 @@ with thin and nginx.
 
         include /d/bb/nginx_thin_sinatra_hello_world/config/nginx.conf;
 
+3. Start server ````./bin/start````
+
 ## Development
 Best way to start the development server:
 
