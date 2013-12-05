@@ -17,6 +17,7 @@ Best way to start the development server:
 
 ## Production
 Use helper scripts in ````bin```` directory
+
 *  ````start```` to start thin cluster
 *  ````stop```` to stop thin cluster
 *  ````restart```` to restart thin cluster
