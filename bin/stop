@@ -1,1 +1,2 @@
 #!/bin/bash
+bundle exec thin -C config/thin_config.yml -R config.ru stop

@@ -2,7 +2,7 @@
 chdir: /d/bb/nginx_thin_sinatra_hello_world
 environment: production
 address: 0.0.0.0
-port: 2200
+port: 2000
 servers: 3
 onebyone: true
 timeout: 30
