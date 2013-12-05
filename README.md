@@ -1,29 +1,35 @@
+# Hello world with Sinatra, Thin & Nginx
+
 This is a sample sinatra application working
 with thin and nginx.
 
 ## Setup
 
-Include the nginx.conf in your main nginx.conf.
+1. ````bundle install````
+2. Include ````config/nginx.conf```` in your main ````nginx.conf````. E.g.
 
-    include /d/bb/nginx_thin_sinatra_hello_world/config/nginx.conf;
-
-
-## Run
-    ./command.sh
+        include /d/bb/nginx_thin_sinatra_hello_world/config/nginx.conf;
 
 ## Development
-The best way to start the server during development is.
+Best way to start the development server:
 
     rerun "rackup -s thin -p 5555 config.ru"
 
+## Production
+Use helper scripts in ````scripts```` directory
+* ````start```` to start thin cluster
+* ````stop```` to stop thin cluster
+* ````restart```` to restart thin cluster
+* ````logtail```` to ````tail -f```` all log files
+
 ## Test
 
-Check server with the following commands.
+Use the following command to test your sinatra app.
 
-Static resource:
+1. Static resource:
 
-    curl -H 'Host: app.com' localhost/hello.txt
+    ````curl -H 'Host: app.com' localhost/hello.txt````
 
-Dynamic resource:
+2. Dynamic resource:
 
-    curl -H 'Host: app.com' localhost
+    ````curl -H 'Host: app.com' localhost````
