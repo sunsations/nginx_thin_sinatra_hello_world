@@ -1,7 +1,6 @@
 # Hello world with Sinatra, Thin & Nginx
 
-This is a sample sinatra application working
-with thin and nginx.
+This is a sample sinatra application working with thin and nginx.
 
 ## Setup
 
@@ -23,13 +22,13 @@ Use helper scripts in ````bin```` directory
 *  ````start```` to start thin cluster
 *  ````stop```` to stop thin cluster
 *  ````restart```` to restart thin cluster
-*  ````logtail```` to ````tail -f```` all log files
 
 All script must be run from the root directory, e.g: ````./bin/start````
 
 ## Test
 
-Use the following command to test your sinatra app.
+Use the following command to test your sinatra app. The host must 
+be configured in Nginx.
 
 1. Static resource:
 
